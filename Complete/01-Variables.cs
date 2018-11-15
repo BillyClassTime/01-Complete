@@ -5,7 +5,7 @@ namespace _01_Complete
 {
     class Variables
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //int x;
             //int y;
