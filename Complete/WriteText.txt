@@ -1,0 +1,1 @@
+A simple example to write  data into a file saved in disk
