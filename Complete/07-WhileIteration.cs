@@ -76,10 +76,10 @@ namespace _01_Complete
             Console.Clear();
             Console.WriteLine("Print numbers!");
             Console.Write("Type a number:");
-            int result = int.Parse(Console.ReadLine());
-            int counter = 1;
+            int resultado = int.Parse(Console.ReadLine());
+            int contador = 1;
             string line = "";
-            while (counter < result + 1 )
+            while (contador < resultado + 1 )
             {
                 Console.Write("{0:000}",counter);
                 counter++;

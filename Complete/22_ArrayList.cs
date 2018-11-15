@@ -5,15 +5,21 @@ namespace _01_Complete
 {
     class ArrayListExamples
     {
-
-
         public static void Main()
         {
             // Creating and initialize a new ArrayList
-            ArrayList myAL = new ArrayList();
-            myAL.Add("Hello");
-            myAL.Add("World");
-            myAL.Add("!");
+            //ArrayList myAL = new ArrayList();
+            //myAL.Add("Hello");
+            //myAL.Add("World");
+            //myAL.Add("!");
+
+            var myAL = new ArrayList
+            {
+                "Hello",
+                "World",
+                "!"
+            };
+
 
             //Display the properties and values of array List
             Console.WriteLine("myAl");
@@ -31,7 +37,7 @@ namespace _01_Complete
           Console.WriteLine("myAL.GetEnumerator(0, 1);");
             while (enu.MoveNext())
             {
-                Object obj = enu.Current;
+                var obj = enu.Current;
                 Console.WriteLine(obj);
             }
             Console.WriteLine();
