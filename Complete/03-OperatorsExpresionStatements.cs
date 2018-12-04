@@ -8,7 +8,7 @@ namespace _01_Complete
 {
     class OperatorsExpresionStatements
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //Variable declaration
             int x, y, a, b;
@@ -72,7 +72,7 @@ namespace _01_Complete
 
             // Also, here's the in-line conditional operator we learned about in 
             //the previos lesson..
-            string message = (x == 1) ? "Car" : "Boat";
+            var message = (x == 1) ? "Car" : "Boat";
             Console.WriteLine($"The value of x is {x}, so the answer is {message}");
             Console.ReadLine();
         }

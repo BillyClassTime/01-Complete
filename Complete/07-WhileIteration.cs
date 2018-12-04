@@ -6,9 +6,9 @@ namespace _01_Complete
     class WhileIteration
     {
         #region Main
-        static void Main(string[] args)
+        static void Main()
         {
-            bool displayMenu = true;
+            var displayMenu = true;
             while (displayMenu)
             {
                 displayMenu = MainMenu();
@@ -23,7 +23,7 @@ namespace _01_Complete
             Console.WriteLine("1) Print Numbers");
             Console.WriteLine("2) Guessing Game");
             Console.WriteLine("3) Exit");
-            string result = Console.ReadLine();
+            var result = Console.ReadLine();
             if (result=="1")
             {
                 PrintNumbers();
@@ -51,14 +51,14 @@ namespace _01_Complete
             Console.Clear();
             Console.WriteLine("Guessing game!!");
 
-            Random myRandom = new Random();
-            int randomNumber = myRandom.Next(1, 11);
-            int guesses = 0;
-            bool incorrect = true;
+            var myRandom = new Random();
+            var randomNumber = myRandom.Next(1, 11);
+            var guesses = 0;
+            var incorrect = true;
             do
             {
                 Console.WriteLine("Guest a nubmer between 1 and 10:");
-                string result = Console.ReadLine();
+                var result = Console.ReadLine();
                 guesses++;
                 if (result == randomNumber.ToString())
                 {
@@ -76,14 +76,14 @@ namespace _01_Complete
             Console.Clear();
             Console.WriteLine("Print numbers!");
             Console.Write("Type a number:");
-            int resultado = int.Parse(Console.ReadLine());
-            int contador = 1;
-            string line = "";
+            var resultado = int.Parse(Console.ReadLine());
+            var contador = 1;
+            var line = "";
             while (contador < resultado + 1 )
             {
-                Console.Write("{0:000}",counter);
-                counter++;
-                line = (counter == result+1) ? "\n" : "-";
+                Console.Write("{0:000}",contador);
+                contador++;
+                line = (contador == resultado+1) ? "\n" : "-";
                 Console.Write($"{line}");
             }
             Console.Write("Press any key to continue...");

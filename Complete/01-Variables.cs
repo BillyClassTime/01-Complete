@@ -7,23 +7,23 @@ namespace _01_Complete
     {
         static void Main()
         {
-            //int x;
-            //int y;
-            //x = 7;
-            //y = x + 3;
-            //Console.WriteLine(y);
-            //Console.ReadLine();
             Console.WriteLine("What is your name?");
             Console.WriteLine("Type your first name:");
             string myFirstName;
             myFirstName = Console.ReadLine();
             Console.Write("Type your last name:");
-            string myLastName = Console.ReadLine();
-            Console.WriteLine($"Hello, {myFirstName} {myLastName} " +
-                $"{"nice to see you!"}");
-            Console.WriteLine("Hello {0} {1} {2} ", myFirstName, myLastName, 
-                "Nice to see you!");
+            var myLastName = Console.ReadLine();
+            Console.WriteLine($"Hello, {myFirstName} {myLastName} {"nice to see you!"}");
+            Console.WriteLine($"Hello {myFirstName} {myLastName} {"Nice to see you!"} ");
             Console.ReadLine();
+            myLastName = string.Empty;
+            concatenacion(myFirstName, out myLastName);
+        }
+
+        private static void concatenacion(string myFirtsName, out string v)
+        {
+            v = string.IsNullOrEmpty(myFirtsName) ? "Apellido en blanco" : $"{myFirtsName} no esta en blanco";
+            return;
         }
     }
 }

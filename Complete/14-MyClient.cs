@@ -11,13 +11,13 @@ namespace _01_Complete
     //aseemblyes with referentiation in the projects.
     class MyClient
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Scrape myScrape = new Scrape();
-            string value = myScrape.ScrapeWebpage("http://msdn.microsoft.com");
+            var myScrape = new Scrape();
+            var value = myScrape.ScrapeWebpage("http://msdn.microsoft.com");
             Console.WriteLine(value);
             Console.ReadLine();
         }
     }
-    // Show all students the other project instead 01-Complete: ScrapeLibrary 
+    // Show all students the other project instead 01-Complete: ScrapeLibrary
 }
