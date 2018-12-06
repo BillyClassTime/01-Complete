@@ -3,7 +3,7 @@ using System.Net;
 
 namespace ScrapeLibrary
 {
-    public class Scrape
+    internal class Scrape
     {
         public string ScrapeWebpage(string url)
         {
@@ -21,9 +21,19 @@ namespace ScrapeLibrary
         private string GetWebpage(string url)
         {
             WebClient client = new WebClient();
-            string content = client.DownloadString(url);
-            content += "THAT'S ALL FOLKS!!!";
+            var myWordCount = new WordCount();
+            var content = client.DownloadString(url);
+            content += $"THAT'S ALL FOLKS!!!-Quantity:{myWordCount.CountWords(content)}";
+
             return content;
+        }
+        private class WordCount
+        {
+            public int CountWords(string stringToCount)
+            {
+                var quantityWords = stringToCount.Length;
+                return quantityWords;
+            }
         }
 
     }
