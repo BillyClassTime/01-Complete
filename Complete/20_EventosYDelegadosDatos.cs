@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Complete
 {
 
     class EventosYDelegadosDatos
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Counter_ c = new Counter_(new Random().Next(10));
+            var c = new Counter_(new Random().Next(10));
             c.ThresholdReached += C_ThresholdReached;
 
             Console.WriteLine("press 'a' key to increase total");
@@ -26,7 +22,7 @@ namespace _01_Complete
 
         static void C_ThresholdReached(object sender, ThresholdReachedEventArgs e)
         {
-            Console.WriteLine("The threshold of {0} was reached at {1}.", e.Threshold, e.TimeReached);
+            Console.WriteLine($"The threshold of {e.Threshold} was reached at {e.TimeReached}.");
             Console.ReadLine();
             Environment.Exit(0);
         }
@@ -47,16 +43,18 @@ namespace _01_Complete
             total += x;
             if (total >= threshold)
             {
-                ThresholdReachedEventArgs args = new ThresholdReachedEventArgs();
-                args.Threshold = threshold;
-                args.TimeReached = DateTime.Now;
+                var args = new ThresholdReachedEventArgs
+                {
+                    Threshold = threshold,
+                    TimeReached = DateTime.Now
+                };
                 OnThresholdReached(args);
             }
         }
 
         protected virtual void OnThresholdReached(ThresholdReachedEventArgs e)
         {
-            EventHandler<ThresholdReachedEventArgs> handler = ThresholdReached;
+            var handler = ThresholdReached;
             if (handler != null)
             {
                 handler(this, e);

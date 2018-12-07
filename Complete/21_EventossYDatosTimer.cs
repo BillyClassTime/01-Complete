@@ -7,7 +7,7 @@ using System.Timers;
 //21_EventossYDatosTimer
 namespace _01_Complete
 {
-    class  EventosYDatosTimer
+    class EventosYDatosTimer : IDisposable
     {
         private Timer timer = new Timer();
         EventosYDatosTimer(int interval)
@@ -17,5 +17,9 @@ namespace _01_Complete
 
         private int suma;
 
+        public void Dispose()
+        {
+            timer.Dispose();
+        }
     }
 }

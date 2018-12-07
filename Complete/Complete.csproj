@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_01_Complete.MyClient</StartupObject>
+    <StartupObject>_01_Complete.Ejemplo_Delegados</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

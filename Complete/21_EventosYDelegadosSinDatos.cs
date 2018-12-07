@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Complete
 {
 
     class EventosYDelegadosSinDatos
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Counter c = new Counter(new Random().Next(10));
+            var c = new Counter(new Random().Next(10));
             c.ThresholdReached += C_ThresholdReached;
 
             Console.WriteLine("press 'a' key to increase total");
