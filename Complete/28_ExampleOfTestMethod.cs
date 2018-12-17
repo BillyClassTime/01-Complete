@@ -11,14 +11,14 @@ namespace _01_Complete
         public static void Main()
         {
             //Error en la página No. 4-11
-            Customer customer = new Customer();
-            DateTime dob = DateTime.Today;
+            var customer = new Customer();
+            var dob = DateTime.Today;
             dob.AddDays(7);
             dob = dob.AddDays(7);
             dob = dob.AddYears(-24);
             Console.WriteLine($"Fecha dob:{dob.ToString()}");
             customer.DateOfBirth = dob;
-            int yearsActual = customer.GetAge();
+            var yearsActual = customer.GetAge();
             Console.WriteLine($"EdadActual:{yearsActual}");
             Console.ReadLine();
         }
@@ -28,8 +28,8 @@ namespace _01_Complete
         public DateTime DateOfBirth { get; set; }
         public int GetAge()
         {
-            TimeSpan diference = DateTime.Now.Subtract(DateOfBirth);
-            int ageInYears = (int)(diference.Days / 365.25);
+            var diference = DateTime.Now.Subtract(DateOfBirth);
+            var ageInYears = (int)(diference.Days / 365.25);
             return ageInYears;
         }
     }

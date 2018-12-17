@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_Complete
 {
-    class CoffeMost:IComparable
+    class CoffeMost : IComparable
     {
         //public int Strong { get return _strong; set _strong = value; }
 
@@ -46,6 +43,36 @@ namespace _01_Complete
         public T MyGenericProperty { get; set; }
     }
 
+    struct MyOtherStruct
+    {
+        public int Metodunico()
+        {
+            return 4;
+        }
+    }
+
+    class MyOtherClass
+    {
+        public int Metodounico()
+        {
+            return 4;
+        }
+
+    }
+    class MyGenericOtherClass<T> where T : class
+    {
+        public T genericMemberVariable;
+
+        public T genericMethod<U>(T genericParameter, U anotherGenericType) where U : struct
+        {
+            Console.WriteLine("Generic Parameter of type {0}, value {1}", typeof(T).ToString(), genericParameter);
+            Console.WriteLine("Return value of type {0}, value {1}", typeof(T).ToString(), genericMemberVariable);
+            Console.WriteLine("Return another GenericType type {0}, value {1}", typeof(U).ToString(), anotherGenericType);
+            return genericMemberVariable;
+        }
+    }
+
+
     public class WorkingWithGenerics
     {
         public static void Main()
@@ -73,6 +100,9 @@ namespace _01_Complete
             var listaDouble = new MyGenericClass<double>(23.2F);
             var doubleValor = listaDouble.MyGenericMethod(34.3F);
 
+            var otroValor = new MyGenericOtherClass<MyOtherClass>();
+            var otraEstructura = new MyOtherStruct();
+            otroValor.genericMethod<int>(otroValor.genericMemberVariable, otraEstructura.Metodunico());
             Console.ReadLine();
         }
     }
