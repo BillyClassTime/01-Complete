@@ -7,18 +7,18 @@ namespace ListView
         public MainWindow()
         {
             InitializeComponent();
-            List<MyData> itemData = new List<MyData>();
+            var itemData = new List<MyData>();
             itemData.Add(new MyData() { ItemName = "01", Description="Primera descripción" });
-            itemData.Add(new MyData() { ItemName = "02", Description = "Primera descripción" });
-            itemData.Add(new MyData() { ItemName = "04", Description = "Primera descripción" });
-            itemData.Add(new MyData() { ItemName = "05", Description = "Primera descripción" });
-            itemData.Add(new MyData() { ItemName = "06", Description = "Primera descripción" });
-            itemData.Add(new MyData() { ItemName = "07", Description = "Primera descripción" });
+            itemData.Add(new MyData() { ItemName = "02", Description = "Segunda descripción" });
+            itemData.Add(new MyData() { ItemName = "04", Description = "Cuarta descripción" });
+            itemData.Add(new MyData() { ItemName = "05", Description = "Quinta descripción" });
+            itemData.Add(new MyData() { ItemName = "06", Description = "Sexta descripción" });
+            itemData.Add(new MyData() { ItemName = "07", Description = "Septima descripción" });
             this.LvListaData.ItemsSource = itemData;
         }
         private void Exit_ListView(object sender, RoutedEventArgs e)
         {
-            int k = 1;
+            var k = 1;
             k++;
         }
     }

@@ -7,7 +7,7 @@
 
 <meta name="DCS.dcsuri" content="/en-us/dn308572(d=default,l=en-us,v=msdn.10).aspx" />
 
-<meta name="MN" content="9DDD8835-4:39:51 AM" />
+<meta name="MN" content="6601B2E1-10:34:23 PM" />
 
 <meta name="ms.assetid" content="153034a4-6dd7-42d4-9397-bb50d30a478d" />
 
@@ -27,7 +27,7 @@
 
 <meta name="ms.shortidmsdn" content="dn308572" />
 
-<meta name="ms.sitever" content="2018.06.26.1" />
+<meta name="ms.sitever" content="2018.10.30.1" />
 
 <meta name="NormalizedUrl" content="https://msdn.microsoft.com/en-us/dn308572(d=default,l=en-us,v=msdn.10).aspx" />
 
@@ -108,11 +108,11 @@
 
         
 
-    <link rel="stylesheet" type="text/css" href="https://uhf.microsoft.com/mscc/statics/mscc-0.4.0.min.css" /><link rel="stylesheet" type="text/css" href="https://docs.microsoft.com/msdn-files/feeds/MSDN/en-us/home/home_2017-08.css" /><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Reset,0:Layout,1:ImageSprite,1:MsdnLayout,2:jquery-ui-1.10.3.custom,3:Header,3:HeaderFooterSprite,3:Header.MediaQueries,4:Banner.MediaQueries,2:Breadcrumbs,1:Breadcrumbs,5:NoTemplate,3:Footer,3:Footer.MediaQueries,5:NewFooterSock,5:NewFooterSock.MediaQueries,5:LinkList;/Areas/Centers/Themes/Base/Content:0,/Areas/Centers/Themes/MsdnBase/Content:1,/Areas/Epx/Content/Css:2,/Areas/Centers/Themes/StandardDevCenter/Content:3,/Areas/Epx/Shared/Content:4,/Areas/Epx/Themes/Base/Content:5&amp;amp;v=0E79703356D022C329ED6762CA1BA423" /><script type="text/javascript" src="https://i2-msdn.sec.s-msft.com/Areas/Global/Content/Loader.js" class="mtps-injected"></script><script type="text/javascript" class="mtps-injected">
+    <link rel="stylesheet" type="text/css" href="https://uhf.microsoft.com/mscc/statics/mscc-0.4.1.min.css" /><link rel="stylesheet" type="text/css" href="https://docs.microsoft.com/msdn-files/feeds/MSDN/en-us/home/home_2017-08.css" /><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Reset,0:Layout,1:ImageSprite,1:MsdnLayout,2:jquery-ui-1.10.3.custom,3:Header,3:HeaderFooterSprite,3:Header.MediaQueries,4:Banner.MediaQueries,2:Breadcrumbs,1:Breadcrumbs,5:NoTemplate,3:Footer,3:Footer.MediaQueries,5:NewFooterSock,5:NewFooterSock.MediaQueries,5:LinkList;/Areas/Centers/Themes/Base/Content:0,/Areas/Centers/Themes/MsdnBase/Content:1,/Areas/Epx/Content/Css:2,/Areas/Centers/Themes/StandardDevCenter/Content:3,/Areas/Epx/Shared/Content:4,/Areas/Epx/Themes/Base/Content:5&amp;amp;v=33E9A4FDB450906A0AEDAB28DCA1D45C" /><script type="text/javascript" src="https://i2-msdn.sec.s-msft.com/Areas/Global/Content/Loader.js" class="mtps-injected"></script><script type="text/javascript" class="mtps-injected">
 /*<![CDATA[*/
 (function() {
 	window.mtpsAmd = true;
-	var amdCombinedUrl = "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:Utilities,1:JSLLRecord,0:FixJQueryMobileDefaultScroll,2:Layout,1:responsive,2:SearchBox,3:Header,2:Rating,2:NewFooterSock,3:Footer;/Areas/Epx/Content/Scripts:0,/Areas/Centers/Themes/Base/Content:1,/Areas/Epx/Themes/Base/Content:2,/Areas/Centers/Themes/StandardDevCenter/Content:3&amp;hashKey=2EE32598AC477E1F2C1150AC9A9A3FBC&amp;v=E876EE54AFCAE4B1B46726D6B16F9D6E";
+	var amdCombinedUrl = "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:Utilities,1:JSLLRecord,0:FixJQueryMobileDefaultScroll,2:Layout,1:responsive,2:SearchBox,3:Header,2:Rating,2:NewFooterSock,3:Footer;/Areas/Epx/Content/Scripts:0,/Areas/Centers/Themes/Base/Content:1,/Areas/Epx/Themes/Base/Content:2,/Areas/Centers/Themes/StandardDevCenter/Content:3&amp;hashKey=2EE32598AC477E1F2C1150AC9A9A3FBC&amp;v=98DB392E1EFCA3C652A94E717435F0F9";
 
 	require.config({ paths: { utilities: amdCombinedUrl, jSLLRecord: amdCombinedUrl, fixJQueryMobileDefaultScroll: amdCombinedUrl, layout: amdCombinedUrl, responsive: amdCombinedUrl, searchBox: amdCombinedUrl, searchBoxJss: "https://i1.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox&btnid=HeaderSearchButton&minimumTermLength=2&pgArea=header&brand=Msdn&loc=en-us&focusOnInit=false&emptyWatermark=true&searchButtonTooltip=Search MSDN", header: amdCombinedUrl, rating: amdCombinedUrl, newFooterSock: amdCombinedUrl, footer: amdCombinedUrl, broker: "https://www.microsoft.com/library/svy/sto/https/broker.js" }, ignoreDuplicateModules: ["utilities", "layout"] });
 
@@ -150,7 +150,7 @@
             
             
         <div id="ux-banner">
-            <div id="msccBanner" dir="ltr" data-site-name="msdn.microsoft.com" data-mscc-version="0.4.0" data-nver="aspnet-3.0.0" data-sver="0.1.2" class="cc-banner" role="alert"><div class="cc-container"><svg class="cc-icon cc-v-center" x="0px" y="0px" viewBox="0 0 44 44" height="30px" fill="none" stroke="currentColor"><circle cx="22" cy="22" r="20" stroke-width="2"></circle><line x1="22" x2="22" y1="18" y2="33" stroke-width="3"></line><line x1="22" x2="22" y1="12" y2="15" stroke-width="3"></line></svg> <span class="cc-v-center cc-text">This site uses cookies for analytics, personalized content and ads. By continuing to browse this site, you agree to this use.</span> <a href="https://go.microsoft.com/fwlink/?linkid=845480" aria-label="Learn more about Microsoft's Cookie Policy" id="msccLearnMore" class="cc-link cc-v-center cc-float-right" data-mscc-ic="false">Learn more</a></div></div>
+            <div id="msccBanner" dir="ltr" data-site-name="msdn.microsoft.com" data-mscc-version="0.4.1" data-nver="aspnet-3.0.0" data-sver="0.1.2" class="cc-banner" role="alert" aria-labelledby="msccMessage"><div class="cc-container"><svg class="cc-icon cc-v-center" x="0px" y="0px" viewBox="0 0 44 44" height="30px" fill="none" stroke="currentColor"><circle cx="22" cy="22" r="20" stroke-width="2"></circle><line x1="22" x2="22" y1="18" y2="33" stroke-width="3"></line><line x1="22" x2="22" y1="12" y2="15" stroke-width="3"></line></svg> <span id="msccMessage" class="cc-v-center cc-text" tabindex="0">This site uses cookies for analytics, personalized content and ads. By continuing to browse this site, you agree to this use.</span> <a href="https://go.microsoft.com/fwlink/?linkid=845480" target="_top" aria-label="Learn more about Microsoft's Cookie Policy" id="msccLearnMore" class="cc-link cc-v-center cc-float-right" data-mscc-ic="false">Learn more</a></div></div>
         </div>
 
       <header>
@@ -163,11 +163,11 @@
               <div class="left">
                 <a class="msdnLogoImg" href="https://msdn.microsoft.com/en-us" title="MSDN home" ms.cmpgrp="mslogo">
                   <div class="clip70x15">
-                    <img alt="Microsoft Logo" id="msft-logo" class="msft-logo" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636656371255991394" />
+                    <img alt="Microsoft Logo" id="msft-logo" class="msft-logo" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636765537735351758" />
                   </div>
                 </a>
                 <div class="GrayPipeDiv clip1x18">
-                  <img alt="Gray Pipe" class="GrayPipe" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636656371255991394" />
+                  <img alt="Gray Pipe" class="GrayPipe" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636765537735351758" />
                 </div>
                   <a class="DevCenterFullNameNonMegaBlade" href="https://msdn.microsoft.com/en-us">Developer Network</a>
                 <a class="DevCenterFullName" href="https://msdn.microsoft.com/en-us">Developer Network</a>
@@ -228,15 +228,6 @@
                                                         </li>
                                                         <li class="inactive">
                                                             <a href="https://msdn.microsoft.com/officeevaluationresources" title="Office resources" role="link">Office resources</a>
-                                                        </li>
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/sharepoint2013resources" title="SharePoint Server 2013 resources" role="link">SharePoint Server 2013 resources</a>
-                                                        </li>
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/sqlserver2014expressresources" title="SQL Server 2014 Express resources" role="link">SQL Server 2014 Express resources</a>
-                                                        </li>
-                                                        <li class="inactive">
-                                                            <a href="https://msdn.microsoft.com/windowsserver2012r2resources" title="Windows Server 2012 resources" role="link">Windows Server 2012 resources</a>
                                                         </li>
                                                 </ul>
                                         </li>
@@ -337,13 +328,13 @@
     <form id="HeaderSearchForm" name="HeaderSearchForm" method="get">
       <button id="FakeHeaderSearchButton" value="Search" type="submit" class="header-search-button" role="button" aria-label="search finder">
         <div id="search-finder-div" class="clip16x20">
-          <img alt="search finder" id="search-finder" class="search-finder" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636656371255991394" />
+          <img alt="search finder" id="search-finder" class="search-finder" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636765537735351758" />
         </div>
       </button>
       <button id="HeaderSearchButton" style="display:none"></button>
       <div id="searchSplitter"></div>
       <div id="searchCloseIconDiv" class="clip16x20" tabindex="0">
-        <img alt="search clear" id="searchCloseIcon" class="search-clear-x" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636656371255991394" />
+        <img alt="search clear" id="searchCloseIcon" class="search-clear-x" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636765537735351758" />
       </div>
       <div id="searchTextContainer" style="width: 0;">
         <input id="HeaderSearchTextBox" name="query" type="text" aria-label="search edit textbox" maxlength="200" onfocus="Epx.Controls.SearchBox.watermarkFocus(event, this.title)" onblur="Epx.Controls.SearchBox.watermarkBlur(event, this.title)" />
@@ -555,7 +546,7 @@
             
 
 
-<input name="__RequestVerificationToken" type="hidden" value="cOqOdWlKdATA8e8_rijejIdonIFZwxERlZPokGuciMrj2V_N7LcE3-gE5wrK1Vy6V1pcZDrun_pMDUXvYLUIyV8Gt701" />
+<input name="__RequestVerificationToken" type="hidden" value="FhRTXrrBvN6btN-qtWhLrrDbOpjvTwTLwkIe3QWy0L3AysYRgDJy3wWgCwL3v5O3BJ72SM3fQlqQBc93CchDOm1bno01" />
 <input id="ratingSubmitUrl" type="hidden" value="https://msdn.microsoft.com/en-us/library/feedback/add/dn308572" />
 <input id="isTopicRated" type="hidden" value="false" />
 
@@ -762,7 +753,7 @@
 </div>
             <span class="logoLegal">
                 <span class="logoSpan clip67x13" role="img" tabindex="0" aria-label="microsoft logo">
-                    <img alt="logo" class="logo" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636656371255991394" />
+                    <img alt="logo" class="logo" src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/HeaderFooterSprite.png?v=636765537735351758" />
                 </span>
                 <span class="copyright">Â© 2018 Microsoft</span>
             </span>
@@ -785,9 +776,9 @@
 MTPS.injectScripts([
 	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"js\": \"https://i2-msdn.sec.s-msft.com\", \r\n\t\"css\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"ttf\": \"https://i-msdn.sec.s-msft.com\"\r\n});\r\n/**/" },
 	{ url: "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.min.js" },
-	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:jquery-ui-1.10.3.custom.min,0:ABTestControl,1:MobileInit;/Areas/Epx/Content/Scripts:0,/Areas/Centers/Themes/Base/Content:1\u0026amp;hashKey=5B0732A5734C65D560A1F15E0B620AC7\u0026amp;v=A02B0C4A7F34592FB140F98EF6008864" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:jquery-ui-1.10.3.custom.min,0:ABTestControl,1:MobileInit;/Areas/Epx/Content/Scripts:0,/Areas/Centers/Themes/Base/Content:1\u0026amp;hashKey=5B0732A5734C65D560A1F15E0B620AC7\u0026amp;v=ACF0C38315B014E7771E7EBB7D35075C" },
 	{ url: "https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.3.0/jquery.mobile-1.3.0.min.js" },
-	{ url: "https://uhf.microsoft.com/mscc/statics/mscc-0.4.0.min.js" },
+	{ url: "https://uhf.microsoft.com/mscc/statics/mscc-0.4.1.min.js" },
 	{ url: "https://i2-msdn.sec.s-msft.com/Areas/Epx/Themes/Base/Content/JumpRedirect.js" },
 	{ url: "https://docs.microsoft.com/msdn-files/feeds/MSDN/en-us/home/home_pt.js" }
 ]);
