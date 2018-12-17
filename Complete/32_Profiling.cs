@@ -35,7 +35,7 @@ namespace _01_Complete
         }
         private static void ReadingWebData()
         {
-            var text = string.Format("{0} {1}", "A simple example to write ",
+            var text = string.Format("{0} {1}", "Profiling: A simple example to write ",
                    "data into a file saved in disk");
             System.Console.WriteLine(text);
             File.WriteAllText(
