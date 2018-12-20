@@ -23,7 +23,7 @@ namespace _01_Complete
         private static void Logging(string Message)
         {
             var eventLog = "Application";
-            var eventSource = "Logging Demo";
+            var eventSource = "Logging Demo 3";
             var eventMessage = Message;
             // Create the event source if it does not already exist.
             if (!EventLog.SourceExists(eventSource))

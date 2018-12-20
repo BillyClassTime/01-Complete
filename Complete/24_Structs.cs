@@ -57,9 +57,10 @@
                 Bean = "Soft",CountryOfOrigin = "Ethiophya",Strength = 3
             };
 
-            //Accediendo a la clase Menu
+            //Accediendo a la struct Menu
             Menu menu = new Menu("bev1","bev2");
             string firstDrink = menu.beverages[0];
+            var SecondDrink = menu[1];
             //Accediento al array usando el indexer
             firstDrink = menu[0];
             string secondDrink = menu[1];

@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_01_Complete.PerformancesCounters</StartupObject>
+    <StartupObject>_02_Complete.Principal_01</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -88,7 +88,7 @@
     <Compile Include="21_EventosYDelegadosSinDatos.cs" />
     <Compile Include="19_Delegados.cs" />
     <Compile Include="22_ArrayList.cs" />
-    <Compile Include="24A_Structs.cs" />
+    <Compile Include="24A_ClassInterface.cs" />
     <Compile Include="24_Structs.cs" />
     <Compile Include="25_Hashtableexample.cs" />
     <Compile Include="26_ValuesAndReferences.cs" />
@@ -98,6 +98,7 @@
     <Compile Include="31-Alert.cs" />
     <Compile Include="32_Profiling.cs" />
     <Compile Include="33_PerformanceCounter.cs" />
+    <Compile Include="34-Task_Multithread.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="23_Scrape.cs" />
     <Compile Include="SpanDemo.cs" />

@@ -30,6 +30,12 @@ namespace _01_Complete
 
             //ArrayLists are dynamically sized,
             //cool features sorting, remove items
+            var myArrayList2 = new ArrayList
+            {
+                car1,
+                car2,
+                b1
+            };
             var myArrayList = new ArrayList
             {
                 car1,
