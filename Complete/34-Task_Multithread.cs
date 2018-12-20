@@ -22,6 +22,9 @@ namespace _01_Complete
                             {
                                 da.ShowMethod("Called form Lampda Expression");
                             });
+            t1.Start();
+            t2.Start();
+            t3.Start();
             Console.WriteLine("Done");
             Console.ReadLine();
         }
@@ -34,7 +37,7 @@ namespace _01_Complete
         }
         internal void ShowMethod(string message)
         {
-            Thread.Sleep(200);
+            Thread.Sleep(3000);
             Console.WriteLine($"To {DateTime.Now.ToLongDateString().ToString()} {message} ");
         }
     }
