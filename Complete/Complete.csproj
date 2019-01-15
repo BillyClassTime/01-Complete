@@ -103,6 +103,7 @@
     <Compile Include="33_PerformanceCounter.cs" />
     <Compile Include="34-Task_Multithread.cs" />
     <Compile Include="35 - Task Chained.cs" />
+    <Compile Include="ImplementingIEnumerable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="23_Scrape.cs" />
     <Compile Include="SerializeDeserealize.cs" />
