@@ -34,7 +34,9 @@ namespace _01_Complete
                             string[] wordInFile = sb.ToString().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                             foreach (var word in wordInFile)
                             {
+                                //=== 1
                                 _wordCounts.AddOrUpdate(word, 1, (s, n) => n + 1);
+                                //=== 2
                                 //int value;
                                 //if (_wordCounts.TryGetValue(word, out value))
                                 //{
@@ -44,10 +46,12 @@ namespace _01_Complete
                                 //{
                                 //    _wordCounts[word] = 1;
                                 //}
+                                //=== 3
                                 //var value = _wordCounts.GetOrAdd(word, 0);
                                 //_wordCounts[word] = value++;
-
-                                
+                                //=== 4
+                                //var value = _wordCounts.GetOrAdd(word, 0);
+                                //_wordCounts.TryUpdate(word, value + 1, value);
                             }
                         });
                     var diretories = dirInfo.GetDirectories().AsParallel<DirectoryInfo>();
