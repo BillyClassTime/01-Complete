@@ -10,13 +10,14 @@ namespace _01_Complete
         {
             Task<string> t1 = new Task<String>(() =>
             {
-                Thread.Sleep(1500);
+                Thread.Sleep(2500);
                 return "Task 1 complete";
             });
 
             //Task t2 = new Task((input) =>
             Task t2 = t1.ContinueWith((input) =>
              {
+                 Console.WriteLine("Otro proceso en la tarea 2");
                  Console.WriteLine(input.Result);
                  Console.WriteLine("Task 2 Complete");
                  //}, "Task 2");
@@ -36,6 +37,7 @@ namespace _01_Complete
             //Console.WriteLine(t1.Result); // In step 2 of demo do comment to this line
 
             Console.WriteLine("Done");
+            Console.WriteLine($"After Done: {t1.Result}");
             Console.ReadLine();
 
         }

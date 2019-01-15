@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace XML_Manager
@@ -10,7 +6,7 @@ namespace XML_Manager
     class Program
     {
         private const String filename = "items.xml";
-        static void Main(string[] args)
+        static void Main()
         {
             XmlTextReader reader = null;
 
@@ -18,9 +14,12 @@ namespace XML_Manager
             {
                 // Load the reader with the data file and ignore   
                 // all white space nodes.  
-                reader = new XmlTextReader(filename);
-                reader.WhitespaceHandling = WhitespaceHandling.None;
-
+                //reader = new XmlTextReader(filename);
+                //reader.WhitespaceHandling = WhitespaceHandling.None;
+                reader = new XmlTextReader(filename)
+                {
+                    WhitespaceHandling = WhitespaceHandling.None
+                };
                 // Parse the file and display each of the nodes.  
                 while (reader.Read())
                 {
@@ -55,6 +54,8 @@ namespace XML_Manager
                         case XmlNodeType.EndElement:
                             Console.Write("</{0}>", reader.Name);
                             break;
+                        default:
+                            break;
                     }
                     Console.WriteLine();
                 }
@@ -64,7 +65,10 @@ namespace XML_Manager
             finally
             {
                 if (reader != null)
+                {
                     reader.Close();
+                    reader.Dispose();
+                }
             }
         }
     }
