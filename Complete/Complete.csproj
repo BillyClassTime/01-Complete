@@ -36,7 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_01_Complete.myTokenInDifferentThreads</StartupObject>
+    <StartupObject>_01_Complete.ImplementingDynamic</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -107,6 +107,7 @@
     <Compile Include="37-myHeritage.cs" />
     <Compile Include="38 - myNullableBool.cs" />
     <Compile Include="39 - myAssemblies.cs" />
+    <Compile Include="40-ImplementingDynamic.cs" />
     <Compile Include="40-TokenInDifferentThreads.cs" />
     <Compile Include="ImplementingIEnumerable.cs" />
     <Compile Include="ImplementingParallel.cs" />
