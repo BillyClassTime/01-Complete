@@ -36,7 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_01_Complete.MyParallel</StartupObject>
+    <StartupObject>_01_Complete.myHashingAlgorithm</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -103,6 +103,7 @@
     <Compile Include="33_PerformanceCounter.cs" />
     <Compile Include="34-Task_Multithread.cs" />
     <Compile Include="35 - Task Chained.cs" />
+    <Compile Include="36 - HashingAlgorithm.cs" />
     <Compile Include="ImplementingIEnumerable.cs" />
     <Compile Include="ImplementingParallel.cs" />
     <Compile Include="PerformanceOperationString.cs" />
