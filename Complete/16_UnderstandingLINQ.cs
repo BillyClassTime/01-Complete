@@ -53,7 +53,7 @@ namespace _01_Complete
             Console.WriteLine(myCars.Sum(p => p.StickerPrice));
             foreach (var car in orderedCars)
             {
-                Console.WriteLine("{0} {1}", car.Year, 
+                Console.WriteLine("{0} {1}", car.Year,
                     car.Model, car.VIN);
             }
             orderedCars = myCars.OrderByDescending(p => p.Year);
@@ -68,5 +68,40 @@ namespace _01_Complete
             Console.WriteLine(newCars.GetType());
             Console.ReadLine();
         }
+    }
+    class pointExam
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Hello World");
+            List<Category> categories = new List<Category>()
+        {
+            new Category() {ID = 1, Name = "Food"},
+            new Category() {ID = 2, Name = "Clothing"}
+        };
+            List<Product> products = new List<Product>()
+        {
+            new Product() {Name="Strawberry", CategoryID = 1},
+            new Product() {Name="Banana", CategoryID = 1},
+            new Product() {Name="Pants", CategoryID = 2}
+        };
+            var productsWithCategories =
+                from product in products
+                join category in categories
+                on product.CategoryID equals category.ID
+            select new { Name = product.Name, Category = category.Name };
+
+        }
+
+    }
+    public class Product
+    {
+        public string Name { get; set; }
+        public int CategoryID { get; set; }
+    }
+    public class Category
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
     }
 }
