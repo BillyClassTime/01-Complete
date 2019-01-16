@@ -1,10 +1,7 @@
-﻿using System;
-using System.Text;
-using System.Collections.Concurrent;
-using System.IO;
-using System.Linq;
+﻿using System; using System.Text; using System.Collections.Concurrent;
+using System.IO; using System.Linq;
 namespace _01_Complete {
-    public class MyParallel{
+    public class MyParallel {
         public static void Main() {
             Console.WriteLine("Starting");
             var c = new Counter();
@@ -28,12 +25,10 @@ namespace _01_Complete {
                                 _wordCounts.AddOrUpdate(word, 1, (s, n) => n + 1);
                                 //=== 2
                                 //int value;
-                                //if (_wordCounts.TryGetValue(word, out value))
-                                //{
+                                //if (_wordCounts.TryGetValue(word, out value)) {
                                 //    _wordCounts[word] = value++;
                                 //}
-                                //else
-                                //{
+                                //else{
                                 //    _wordCounts[word] = 1;
                                 //}
                                 //=== 3
