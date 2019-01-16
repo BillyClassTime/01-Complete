@@ -3,37 +3,27 @@ using System.Text;
 using System.Collections.Concurrent;
 using System.IO;
 using System.Linq;
-namespace _01_Complete
-{
-    public class MyParallel
-    {
-        public static void Main()
-        {
+namespace _01_Complete {
+    public class MyParallel{
+        public static void Main() {
             Console.WriteLine("Starting");
             var c = new Counter();
             c.ProcessDirectory();
-           
         }
-        class Counter
-        {
+        class Counter {
             ConcurrentDictionary<string, int> _wordCounts = new ConcurrentDictionary<string, int>();
-            public Action<DirectoryInfo> ProcessDirectory()
-            {
-                return (dirInfo =>
-                {
+            public Action<DirectoryInfo> ProcessDirectory() {
+                return (dirInfo => {
                     var files = dirInfo.GetFiles("*.cs").AsParallel<FileInfo>();
                     files.ForAll<FileInfo>(
-                        fileInfo =>
-                        {
+                        fileInfo => {
                             var fileContent = File.ReadAllText(fileInfo.FullName);
                             var sb = new StringBuilder();
-                            foreach (var val in fileContent)
-                            {
+                            foreach (var val in fileContent) {
                                 sb.Append(char.IsLetter(val) ? val.ToString().ToLowerInvariant() : " ");
                             }
                             string[] wordInFile = sb.ToString().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                            foreach (var word in wordInFile)
-                            {
+                            foreach (var word in wordInFile){
                                 //=== 1
                                 _wordCounts.AddOrUpdate(word, 1, (s, n) => n + 1);
                                 //=== 2
