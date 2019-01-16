@@ -11,7 +11,8 @@ namespace _01_Complete
             var text = string.Format("{0} {1}","A simple example to write ",
                     "data into a file saved in disk");           
             System.Console.WriteLine(text);
-            File.WriteAllText(
+            
+File.WriteAllText(
             @"C:\Exer\All\01-Complete\Complete\WriteText.txt", text);
             System.Console.ReadLine();
 
@@ -26,4 +27,23 @@ namespace _01_Complete
             Console.ReadLine();
         }
     }
+    class myStreaming
+    {
+        static void Main()
+        {
+            Console.WriteLine("Stream Writer Question");
+            using (StreamWriter writer = new StreamWriter(@"C:\console.txt"))
+            {
+                Console.SetOut(writer);
+                using (FileStream stream = new FileStream(@"C:\file.txt", FileMode.Open))
+                {
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        while (!reader.EndOfStream) Console.WriteLine(reader.ReadLine());
+                    }
+                }
+            }
+        }
+    }
+
 }
