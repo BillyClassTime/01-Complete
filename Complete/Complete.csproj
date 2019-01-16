@@ -104,6 +104,7 @@
     <Compile Include="34-Task_Multithread.cs" />
     <Compile Include="35 - Task Chained.cs" />
     <Compile Include="36 - HashingAlgorithm.cs" />
+    <Compile Include="37-myHeritage.cs" />
     <Compile Include="ImplementingIEnumerable.cs" />
     <Compile Include="ImplementingParallel.cs" />
     <Compile Include="PerformanceOperationString.cs" />
